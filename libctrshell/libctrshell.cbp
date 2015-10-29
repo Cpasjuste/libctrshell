@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libctrshell" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="devkitpro_arm_3ds_compiler" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="" />
+			<DistClean command="" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/libctrshell" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="devkitpro_arm_3ds_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile clean" />
+					<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="Makefile" />
+		<Unit filename="include/ctr_fileutils.h" />
+		<Unit filename="include/ctr_shell.h" />
+		<Unit filename="include/ctr_utility.h" />
+		<Unit filename="source/ctr_boot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/ctr_boot.h" />
+		<Unit filename="source/ctr_fileutils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/ctr_internal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/ctr_internal.h" />
+		<Unit filename="source/ctr_shell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/ctr_title.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/ctr_utility.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/smdh.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,5 @@
+- add recovery mode (press button while booting)
+- proper socket close detection
+- new thread on socket accept (multiple clients)
+- cia_install to nand
+- rename "debug" function to ctr_debug
